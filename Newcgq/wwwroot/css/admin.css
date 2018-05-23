@@ -1,0 +1,30 @@
+﻿body{
+    margin:8px;
+}
+.card-container {
+    display: inline-block;
+    width: 94%;
+    margin-left: 2%;
+}
+
+.card{
+    height:568px;
+    overflow:auto;
+}
+.card input{
+    padding:2px 8px 2px 8px;
+    height:26px;
+    width:200px;
+}
+.card .btn{
+    width:60px;
+}
+
+a {
+    color: rgba(230,230,230,1);
+
+}
+    a:hover {
+        text-decoration: none;
+        color: rgba(255,255,255,1);
+    }

@@ -1,0 +1,48 @@
+﻿<link rel="stylesheet" href="~/css/temp.css">
+
+<div class="body-container">
+    <section class="card-container">
+        <section class="card">
+            <div class="title">
+                <h3>首页</h3>
+            </div>
+
+            @*<div id="ADchart"></div>*@
+            <div class="commendList">
+                <ul>
+                    <li>
+                        <label>选择设备</label>
+                        <select id="deviceList"></select>
+                    </li>
+                    <li>
+                        <label>选择功能</label>
+                        <select id="moduelList"></select>
+                    </li>
+                    <li>
+                        <label>发送间隔</label>
+                        <input id="interval" />
+                            <select id="intervalUnit">
+                                <option value="1">秒</option>
+                                <option value="60">分</option>
+                                <option value="3600">时</option>
+                                <option value="86400">天</option>
+                                <option value="604800">周</option>
+                            </select>
+
+                    </li>
+                    <li>
+                        <label>发送内容</label>
+                        <input id="data"/>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </section>
+    <div class="bottom_tool">
+        <button class="btn_soft" id="sendMessage">确定</button>
+    </div>
+</div>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/index.js"></script>
+

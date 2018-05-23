@@ -1,0 +1,50 @@
+﻿<link rel="stylesheet" href="~/css/moduel.css">
+<div class="nav-sub-container">
+    <div class="sub-nav">
+        <select id="deviceList"></select>
+    </div>
+
+</div>
+
+<div class="body-container">
+
+    <section class="card-container">
+        <section class="card">
+            <div class="title">
+                <h3>已有模块</h3>
+
+                <div class="tools">
+
+                    <button class="btn_soft" id="moduel_del">删除</button>
+                </div>
+
+            </div>
+
+            <div class="multiCheck">
+                <ul id="ActiveList"></ul>
+            </div>
+
+        </section>
+    </section>
+    <section class="card-container">
+        <section class="card">
+            <div class="title">
+                <h3>可添加模块</h3>
+                <div class="tools">
+                    <button class="btn_soft" id="moduel_add">添加</button>
+                </div>
+            </div>
+            <div id="NegativeList" class="multiCheck">
+            </div>
+        </section>
+    </section>
+    <div class="bottom_tool">
+
+        <button class="btn_soft" id="back">返回</button>
+    </div>
+</div>
+
+
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/moduel.js"></script>

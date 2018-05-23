@@ -1,0 +1,90 @@
+﻿@model IEnumerable<Newcgq.Models.UserInfo>
+
+@*@{
+    Layout = null;
+}*@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/admin.css" />
+</head>
+<body>
+    <div class="body-container">
+        <section class="card-container">
+            <section class="card">
+                <div class="title">
+                    <p>
+                        <a asp-action="Create">Create New</a>
+                    </p>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    用户名
+                                </th>
+                                <th>
+                                    密码
+                                </th>
+                                <th>
+                                    地址
+                                </th>
+                                <th>
+                                    电话
+                                </th>
+                                <th>
+                                    公司
+                                </th>
+                                <th>
+                                    部门
+                                </th>
+                                <th>
+                                    性别
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.UserName)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.PassWord)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Address)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tel)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Coporation)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Department)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Sex)
+                        </td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@item.UserName">Edit</a> |
+                            <a asp-action="Delete" asp-route-id="@item.UserName">Delete</a>
+                        </td>
+                    </tr>
+    }
+                        </tbody>
+                    </table>
+            </section>
+        </section>
+    </div>
+</body>
+</html>

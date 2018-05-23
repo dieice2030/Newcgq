@@ -1,0 +1,55 @@
+﻿<link rel="stylesheet" href="~/css/login.css" />
+<link rel="stylesheet" href="~/css/animation.css" />
+
+
+<section class="site-container">
+    <section class="card">
+        <h3>登陆<span id="warning"></span></h3>
+        <form>
+            <div class="form__wrapper">
+                <input class="form__input" id="username" name="username">
+                <label class="form__label" for="email">
+                    <span class="form__label__content"  id="userlabel">用户名</span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="form__wrapper">
+                <input type="password" class="form__input" id="password" name="password">
+                <label class="form__label" for="password">
+                    <span class="form__label__content">密码</span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="form__wrapper">
+                <input class="form__input" id="validation" name="validation">
+                <label class="form__label" for="">
+                    <span class="form__label__content">验证码</span>
+                    <span></span>
+                </label>
+                <span id="img__validate"></span>
+            </div>
+            <div>
+                <select id="usergroup" class="form__section">
+                    <option value="0">管理员登陆</option>
+                    <option value="1">普通用户登陆</option>
+                </select>
+            </div>
+            <div class="form__wrapper__submit pulse infinite" data-wow-delay="0.7s">
+                <div class="form__input__submit">
+                    <button type="button" name="submit" class="btn" id="btn__login">确认</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</section>
+<footer>
+    <div class="footer-wrapper">
+        <div>
+            <p>联系方式</p>
+            <p>yxt@mail.lzjtu.cn</p>
+        </div>
+    </div>
+</footer>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/js/login.js"></script>
+<script src="~/js/test.js"></script>

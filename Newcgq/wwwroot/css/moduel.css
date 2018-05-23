@@ -1,0 +1,77 @@
+﻿ul {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100vh;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom right,#0092ff,rgb(61, 193, 223));
+    background-size: 100%;
+    /* background-size: auto; */
+}
+
+.card-container {
+    display: inline-block;
+    width: 45%;
+    margin: 0 2%;
+}
+
+
+.multiCheck li {
+    position: relative;
+    font-size: 18px;
+}
+
+.multiCheck input {
+    /* display:block; */
+    opacity: 0;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.multiCheck span {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: 1px solid #427eff;
+    background: #0051ff;
+    z-index: -5000;
+}
+
+.multiCheck input:checked + span:after {
+    content: '\00a0';
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    width: 4px;
+    height: 10px;
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#deviceList {
+    background-color: transparent;
+    border: 0;
+    height: 30px;
+    color: white;
+    margin-left: 10px;
+}
+
+    #deviceList option {
+        background-color: rgba(22,22,22,0.95);
+        color: white;
+        border-radius: 10px;
+    }
+
+

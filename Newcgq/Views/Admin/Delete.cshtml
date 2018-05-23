@@ -1,0 +1,79 @@
+﻿@model Newcgq.Models.UserInfo
+@{
+        Layout = null;
+    }
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/admin.css" />
+</head>
+<body>
+    <div class="body-container">
+        <section class="card-container">
+            <section class="card">
+                <div class="title">
+                    <h3>是否确定删除该用户?</h3>
+                </div>
+                <div>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            用户名
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.UserName)
+                        </dd>
+                        <dt>
+                            密码
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.PassWord)
+                        </dd>
+                        <dt>
+                            地址
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Address)
+                        </dd>
+                        <dt>
+                            电话
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Tel)
+                        </dd>
+                        <dt>
+                            公司
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Coporation)
+                        </dd>
+                        <dt>
+                            部门
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Department)
+                        </dd>
+                        <dt>
+                            性别
+                        </dt>
+                        <dd>
+                            @Html.DisplayFor(model => model.Sex)
+                        </dd>
+                    </dl>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <input type="submit" value="删除" class="btn btn-default" /> |
+                        <a asp-action="Index">返回</a>
+                    </form>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+</html>

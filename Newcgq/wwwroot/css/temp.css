@@ -1,0 +1,17 @@
+.card-container {
+    width:94%;
+    margin-left: 2%;
+}
+
+.commendList li{
+    height:26px;
+    font-size:16px;
+    font-weight:600;
+}
+
+.commendList select, .commendList input {
+height:22px;
+padding:0;
+border:0;
+box-sizing:border-box;
+}
