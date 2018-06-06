@@ -26,23 +26,16 @@ namespace Newcgq
             services.AddMvc();
             services.AddSession();
 
-            var connection = @"Server=127.0.0.1,1433;Database=WIFIcgq;Trusted_Connection=True;ConnectRetryCount=0";
+            var connection = @"Server=127.0.0.1,1433;Database=WIFIcgq;User Id=sa;Password=1;ConnectRetryCount=0";
             services.AddDbContext<WIFIcgqContext>(options => options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-           
-            }
+      
 
             app.UseStaticFiles();
             app.UseSession();

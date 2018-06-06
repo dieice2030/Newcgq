@@ -59,7 +59,7 @@ namespace Newcgq.Controllers
                             return Json(0);//用户不存在
                         else if (user.First().PassWord == password)
                         {
-                            HttpContext.Session.SetInt32("username", user.Select(m => m.Id).Single());
+                            HttpContext.Session.SetInt32("UserId", user.Select(m => m.Id).Single());
                             HttpContext.Session.SetString("UserType", "admin");
                             return Json(1);//验证通过
                         }

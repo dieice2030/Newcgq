@@ -24,7 +24,7 @@ login.click(function () {
                 case '-2': warning.text('验证码错误'); break;
                 case '1': {
                     if(usergroup==='1')
-                        location.href = '/Device';
+                        location.href = '/Device/Index';
                     if (usergroup === '0')
                         location.href = '/Admin';
                     break;

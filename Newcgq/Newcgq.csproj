@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Remove="Views\Device\Index.cshtml" />
+    <Content Remove="Views\Device\Test.cshtml" />
     <Content Remove="wwwroot\css\temp.css" />
   </ItemGroup>
 
@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="Views\Device\Index.cshtml" />
+    <None Include="Views\Device\Test.cshtml" />
     <None Include="wwwroot\css\temp.css" />
   </ItemGroup>
 
